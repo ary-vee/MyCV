@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="font-poppins bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+
+    <!-- 🌙 Dark Mode Toggle -->
+    <button id="themeToggle" class="fixed top-4 right-4 z-50 px-4 py-2 rounded-lg
+         bg-indigo-700 text-white dark:bg-emerald-400 dark:text-slate-900
+         shadow-lg transition">
+        🌙 Dark
+    </button>
+
+    <main class="main-content grid grid-cols-1 md:grid-cols-[340px_1fr] min-h-screen">
+
+        <!-- ================= LEFT SECTION ================= -->
+        <section class="left-section bg-indigo-900 dark:bg-slate-800 text-white p-6">
+            <div class="left-content space-y-6">
+
+                <!-- Profile -->
+                <div class="profile text-center">
+                    <div class="image mb-4">
+                        <img src="./555.jpeg" alt="Aryscene Violabian"
+                            class="mx-auto w-36 h-36 rounded-full object-cover">
+                    </div>
+                    <h2 class="name text-2xl font-semibold">Aryscene Violabian</h2>
+                    <p class="career text-emerald-400">Software Engineer</p>
+                </div>
+
+                <hr class="border-white/20">
+
+                <!-- Menu -->
+                <nav class="menu">
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#skills" class="hover:text-emerald-400">SKILLS</a></li>
+                        <li><a href="#references" class="hover:text-emerald-400">REFERENCES</a></li>
+                        <li><a href="#about" class="hover:text-emerald-400">ABOUT ME</a></li>
+                        <li><a href="#experience" class="hover:text-emerald-400">EXPERIENCE</a></li>
+                        <li><a href="#education" class="hover:text-emerald-400">EDUCATION</a></li>
+                    </ul>
+                </nav>
+
+                <hr class="border-white/20">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 class="main-title font-semibold mb-2">Contact Info</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fa fa-phone mr-2"></i>0742184053</li>
+                        <li><i class="fa fa-envelope mr-2"></i>aryscene@gmail.com</li>
+                        <li>
+                            <i class="fa fa-linkedin-square mr-2"></i>
+                            <a href="https://www.linkedin.com/in/aryscene-violabian-7a9aa6128"
+                                class="underline">linkedin</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-github mr-2"></i>
+                            <a href="https://github.com/ary-vee/" class="underline">github</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="border-white/20">
+
+                <!-- Hard Skills -->
+                <div id="skills" class="skills-section space-y-4">
+                    <h3 class="main-title font-semibold">Hard Skills</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>TypeScript</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>Postegress</li>
+                        <li>Git</li>
+                        <li>Vim</li>
+                        <li>Tailwind</li>
+                    </ul>
+                </div>
+
+                <hr class="border-white/20">
+
+                <!-- Soft Skills -->
+                <div id="references" class="references-section space-y-4">
+                    <h3 class="main-title font-semibold">Soft Skills</h3>
+
+                    <div class="refrence">
+                        <h3 class="sub-title font-semibold">Empathy</h3>
+                        <p class="sub-paragraph text-sm">
+                            The tech space is made up of people from many walks of life. I believe in
+                            forming genuine relationships and contributing towards a healthy work environment where
+                            professional goals are accomplished without sacrificing the mental health of anyone on my
+                            team.
+                        </p>
+                    </div>
+
+                    <div class="refrence">
+                        <h3 class="sub-title font-semibold">Critical Thinking</h3>
+                        <p class="sub-paragraph text-sm">
+                            I am by nature a rigorous thinker who approaches problems from a first principles point of
+                            view.
+                            This allows me to make sense of complex information.
+                        </p>
+                    </div>
+
+                    <div class="refrence">
+                        <h3 class="sub-title font-semibold">Adaptability</h3>
+                        <p class="sub-paragraph text-sm">
+                            One of my strengths is being able to navigate a wide variety of situations.
+                            I view myself as a lifelong learner who welcomes new challenges and is comfortable venturing
+                            into unknown territory.
+                        </p>
+                    </div>
+
+                    <div class="refrence">
+                        <h3 class="sub-title font-semibold">Stress Tolerance</h3>
+                        <p class="sub-paragraph text-sm">
+                            I work well under pressure and I'm not afraid of high-stress environments.
+                            I have developed a number of mental tricks that keep me calm and focused.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= RIGHT SECTION ================= -->
+        <section class="right-section bg-white dark:bg-slate-900 p-8 text-slate-800 dark:text-slate-100">
+            <div class="right-main-content space-y-12">
+
+                <!-- ABOUT ME -->
+                <section id="about" class="about sect">
+                    <h2 class="right-title text-2xl font-semibold text-indigo-700 dark:text-emerald-400 mb-3">About Me
+                    </h2>
+                    <p class="paragraph leading-relaxed">
+                        I began learning to code as a hobby while pursuing my degree because
+                        I noticed that software lies at the core of all my personal interests.
+                        <br><br>
+                        Some of which are: philosophy, particularly technological progress and human nature,
+                        digital brands and Web3.
+                        <br><br>
+                        Some of my favourite activities include re-reading books by my favourite authors,
+                        listening to podcasts and keeping up with news from the tech and
+                        financial sector as well as general current events.
+                        <br>
+                        I'm also an avid boxing and mixed martial arts fan, training 4 - 5 days a week.
+                    </p>
+                </section>
+
+                <!-- EXPERIENCE -->
+                <section id="experience" class="experience sect">
+                    <h2 class="right-title text-2xl font-semibold text-indigo-700 dark:text-emerald-400 mb-6">Experience
+                    </h2>
+
+                    <!-- TDMC -->
+                    <div class="timeline grid grid-cols-[120px_1fr] gap-6 mb-4">
+                        <div class="left-tl-content">
+                            <h3 class="tl-title font-semibold">TDMC</h3>
+                            <p class="paragraph">2019</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <h3 class="tl-title-2 font-semibold">Intern Developer</h3>
+                            <ul class="paragraph list-disc pl-5">
+                                <li>Worked on ecommerce websites using HTML, CSS JavaScript.</li>
+                                <li>Used Liquid templating language for Shopify development</li>
+                                <li>Creating mailers for clients</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- United Styles of America -->
+                    <div class="timeline grid grid-cols-[120px_1fr] gap-6 mb-4">
+                        <div class="left-tl-content">
+                            <h3 class="tl-title font-semibold">United Styles of America</h3>
+                            <p class="paragraph">2019</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <h3 class="tl-title-2 font-semibold">Intern Web Content Editor</h3>
+                            <ul class="paragraph list-disc pl-5">
+                                <li>Communicating with dev team</li>
+                                <li>Testing app performance and overall UI/UX</li>
+                                <li>Curating content</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- I-innovate -->
+                    <div class="timeline grid grid-cols-[120px_1fr] gap-6 mb-4">
+                        <div class="left-tl-content">
+                            <h3 class="tl-title font-semibold">I-innovate</h3>
+                            <p class="paragraph">2019</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <h3 class="tl-title-2 font-semibold">Marketing Strategy Consultant</h3>
+                            <ul class="paragraph list-disc pl-5">
+                                <li>Served on the team as a lead strategist</li>
+                                <li>Participated in planning and implementation of strategy behind I-innovate's annual
+                                    multi-city tour.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCATION -->
+                <section id="education" class="education sect">
+                    <h2 class="right-title text-2xl font-semibold text-indigo-700 dark:text-emerald-400 mb-6">Education
+                    </h2>
+
+                    <!-- Vega School -->
+                    <div class="timeline grid grid-cols-[120px_1fr] gap-6 mb-4">
+                        <div class="left-tl-content">
+                            <h3 class="tl-title font-semibold">Vega School</h3>
+                            <p class="paragraph">2018 - 2021</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <h3 class="tl-title-2 font-semibold">BCOM STRATEGIC BRAND MANAGEMENT</h3>
+                            <ul class="paragraph list-disc pl-5">
+                                <li>Micro + Macro economics</li>
+                                <li>Financial management</li>
+                                <li>Consumer behaviour in emerging markets</li>
+                                <li>Design thinking</li>
+                                <li>Innovation theory + practice</li>
+                                <li>Research methodology</li>
+                                <li>Statistics</li>
+                                <li>Digital marketing</li>
+                                <li>Business strategy</li>
+                                <li>Media studies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CERTIFICATIONS -->
+                <section class="certifications sect">
+                    <h2 class="right-title text-2xl font-semibold text-indigo-700 dark:text-emerald-400 mb-6">
+                        Certifications</h2>
+
+                    <!-- Udemy Node.js -->
+                    <div class="timeline grid grid-cols-[120px_1fr] gap-6 mb-4">
+                        <div class="left-tl-content">
+                            <h3 class="tl-title font-semibold">Udemy</h3>
+                            <p class="paragraph">December 2020</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <h3 class="tl-title-2 font-semibold">Node.js, Express and MongoDB</h3>
+                            <ul class="paragraph list-disc pl-5">
+                                <li>Understanding Node.js fundamentals</li>
+                                <li>Building Node.js RESTful APIs</li>
+                                <li>Combining Node.js with other technologies on both the front-end and back-end</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Udemy JavaScript -->
+                    <div class="timeline grid grid-cols-[120px_1fr] gap-6 mb-4">
+                        <div class="left-tl-content">
+                            <h3 class="tl-title font-semibold">Udemy</h3>
+                            <p class="paragraph">July 2021</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <h3 class="tl-title-2 font-semibold">JavaScript Algorithms and Data Structures</h3>
+                            <ul class="paragraph list-disc pl-5">
+                                <li>Foundational data structures and algorithms</li>
+                                <li>Space and time complexity analysis using Big-O notation</li>
+                                <li>Problem solving techniques and approaches for efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- MongoDB University -->
+                    <div class="timeline grid grid-cols-[120px_1fr] gap-6 mb-4">
+                        <div class="left-tl-content">
+                            <h3 class="tl-title font-semibold">MongoDB University</h3>
+                            <p class="paragraph">July 2021</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <h3 class="tl-title-2 font-semibold">MongoDB M001</h3>
+                            <ul class="paragraph list-disc pl-5">
+                                <li>Importing, Exporting and Querying Data</li>
+                                <li>Creating and Manipulating Documents</li>
+                                <li>Advanced CRUD Operations</li>
+                                <li>Indexing and Aggregation Pipeline</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Udemy Node.js Advanced -->
+                    <div class="timeline grid grid-cols-[120px_1fr] gap-6 mb-4">
+                        <div class="left-tl-content">
+                            <h3 class="tl-title font-semibold">Udemy</h3>
+                            <p class="paragraph">October 2021</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <h3 class="tl-title-2 font-semibold">Node JS Advanced Concepts</h3>
+                            <ul class="paragraph list-disc pl-5">
+                                <li>Node.js Event Loop</li>
+                                <li>Clustering and Worker Threads</li>
+                                <li>Managing Cookies and Sessions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Dark Mode Script -->
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        const root = document.documentElement;
+
+        // Only enable dark mode if user previously selected it
+        if (localStorage.theme === 'dark') {
+            root.classList.add('dark');
+            toggle.textContent = '☀️ Light';
+        }
+
+        toggle.onclick = () => {
+            root.classList.toggle('dark');
+            const dark = root.classList.contains('dark');
+            localStorage.theme = dark ? 'dark' : 'light';
+            toggle.textContent = dark ? '☀️ Light' : '🌙 Dark';
+        };
+    </script>
+
+</body>
+
+</html>
